@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 param project_suffix string
-param az_location string = 'eastus'
+param az_location string = 'centralus'
 param github_client_id string
 @secure()
 param github_client_secret string
@@ -12,7 +12,7 @@ param microsoft_client_secret string
 param logging bool = true
 
 var servicePlanName = 'codepush-asp-${project_suffix}'
-var storageAccountName = 'codepushstorage${project_suffix}'
+var storageAccountName = 'dpdevcodepushstorage'
 var webAppName = 'codepush-${project_suffix}'
 var serverUrl = 'https://codepush-${project_suffix}.azurewebsites.net'
 
