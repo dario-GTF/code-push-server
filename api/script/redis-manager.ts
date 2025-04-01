@@ -100,8 +100,8 @@ export class RedisManager {
   constructor() {
     if (process.env.REDIS_HOST && process.env.REDIS_PORT) {
       const redisConfig = {
-        host: '20.46.233.210',
-        port: 6379,
+        host: process.env.REDIS_HOST,
+        port: process.env.REDIS_PORT,
         auth_pass: process.env.REDIS_KEY,
         // tls: {
         //   // Note: Node defaults CA's to those trusted by Mozilla
