@@ -102,7 +102,7 @@ export class RedisManager {
       const redisConfig = {
         host: '20.46.233.210',
         port: 6379,
-        // auth_pass: process.env.REDIS_KEY,
+        auth_pass: process.env.REDIS_KEY,
         // tls: {
         //   // Note: Node defaults CA's to those trusted by Mozilla
         //   rejectUnauthorized: true,
